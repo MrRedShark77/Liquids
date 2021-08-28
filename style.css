@@ -1,0 +1,239 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    table-align: center;
+	text-align: center;
+}
+
+body {
+    color: white;
+    background-color: #181818;
+	overflow-x: hidden;
+	font-size: 14px;
+	margin: 0;
+}
+
+table, tr {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: inline;
+	font-weight: normal;
+    font-size: 35px;
+}
+
+h2 {
+	display: inline;
+	font-weight: normal;
+    font-size: 25px;
+}
+
+h3 {
+	display: inline;
+	font-weight: normal;
+    font-size: 20px;
+}
+
+.table_center {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+
+button {
+	color: white;
+    border: solid 0px black;
+    background-color: #242424;
+    font-size: 14px;
+	cursor: pointer;
+	user-select: none;
+	margin: 3px;
+}
+button:hover {
+	background-color: #333;
+}
+
+.btn {
+	cursor: pointer;
+	max-width: 250px;
+	padding: 7px 25px;
+	text-decoration: none;
+}
+
+.btn_tab {
+	height: 100%;
+	font-size: 20px;
+	padding: 0px 14px 0px 15px;
+}
+
+.btn_tab.choosed {
+	background-color: #333;
+}
+
+.liquid {
+	width: 260px;
+	min-height: 350px;
+	background-color: #242424;
+	padding: 7px 10px;
+	margin: 5px;
+	user-select: none;
+}
+
+.liquid > .liquid_name {
+	font-size: 25px;
+}
+
+.liquid > .liquid_cap {
+	width: 100%;
+	height: 200px;
+	background-color: #282828;
+	display: flex;
+	align-items: flex-end;
+}
+
+.liquid_cap > .liquid_volume {
+	width: 100%;
+	transition-duration: 0.1s;
+}
+
+.water {
+	background-color: #0066ff;
+}
+
+.cobblestone {
+	background-color: #a5a5a5;
+}
+
+.coal {
+	background-color: #111111;
+}
+
+.copper {
+	background-color: #b87333;
+}
+
+.iron {
+	background-color: #ececec;
+}
+
+.gold {
+	background-color: #ffbb00;
+}
+
+.gemstone {
+	background-image: url('images/gemstone.jpg');
+	background-size: 25%;
+}
+
+.energy {
+	color: #ffe600;
+}
+
+.liquid > .liquid_btn {
+	width: 100%;
+	height: 30px;
+	font-size: 20px;
+}
+
+.upgrade {
+	background-color: #242424;
+	padding: 0px 20px;
+	width: calc(100% - 40px);
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	user-select: none;
+	margin-bottom: 10px;
+}
+
+.upgrade > .desc {
+	width: calc(100% - 150px);
+	text-align: left;
+}
+
+.upgrade > button {
+	height: 40px;
+	font-size: 25px;
+	width: 150px;
+}
+
+.square {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+#screen_white {
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+[tooltip] {
+	position: relative;
+	z-index: 2;
+	white-space: pre-wrap;
+}
+
+[tooltip]:before,
+[tooltip]:after {
+	visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	pointer-events: none;
+	white-space: pre-wrap;
+}
+
+[tooltip]:before {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-bottom: 5px;
+	margin-left: -100px;
+	padding: 7px;
+	width: 200px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 5%, 0.95);
+	color: #fff;
+	content: attr(tooltip);
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+	transition-duration: 0.5s;
+	white-space: pre-wrap;
+}
+
+[tooltip]:after {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	border-top: 5px solid #000;
+	border-top: 5px solid hsla(0, 0%, 5%, 0.9);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+	transition-duration: 0.5s;
+	white-space: pre-wrap;
+}
+
+[tooltip]:hover:before,
+[tooltip]:hover:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+	white-space: pre-wrap;
+}
