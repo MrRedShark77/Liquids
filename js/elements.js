@@ -242,8 +242,8 @@ function updateEndHTML() {
 }
 
 function updateHTML() {
-	tmp.el.loading.setDisplay(tmp.ready < 2)
-    tmp.el.app.setDisplay(tmp.ready >= 2)
+	tmp.el.loading.setDisplay(tmp.ready < 3)
+    tmp.el.app.setDisplay(tmp.ready >= 3)
 	updateEndHTML()
     updateTabsHTML()
 	updateLiquidsHTML()
