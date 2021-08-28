@@ -1,2 +1,3 @@
-# Liquids
- its game in JAM summer 2021
+![Liquids](/images/Logo.png)
+
+Game made by MrRedShark77 in JAM summer 2021
